@@ -12,7 +12,7 @@
   <servlet-mapping>
     <servlet-name>InitServlet</servlet-name>
     <url-pattern>/InitServlet</url-pattern>
-  </servlet-mapping>
+  </servlet-mapping> 
   
   <listener>
   <listener-class>listener.AdminSessionAtrListener</listener-class>

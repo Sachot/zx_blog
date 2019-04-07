@@ -24,7 +24,7 @@ import domain.Article;
 /**
  * Servlet implementation class InitServlet
  */
-@WebServlet("/InitServlet")
+//@WebServlet("/InitServlet")
 public class InitServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
