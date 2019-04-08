@@ -11,7 +11,7 @@
 	<div class="login">
 		<div class="header">
 			<h1>
-				<a href="./guestlogin.jsp">guest登录</a> <a href="./guestregist.jsp">guest注册</a>
+				<a href="./guestview.jsp">guest</a> <a href="./adminregist.jsp">admin注册</a>
 				<a href="./adminlogin.jsp">admin登录</a>
 			</h1>
 
@@ -24,7 +24,7 @@
 		%>
 		
 		<h3><font color="red"><%=msg %></font></h3>
-		<form action="/zx_blog/AdminLoginServlet" method="post">
+		<form action="/maven.spring_test.zx_blog/AdminLoginServlet" method="post">
 			<table>
 				<tr>
 					<td class="td1">用户名</td>

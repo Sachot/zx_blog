@@ -44,7 +44,7 @@
 			
 		%>
 		<h3><font color="red"><%=msg %></font></h3>
-		<form action="/zx_blog/GuestLogin" method="post">
+		<form action="/maven.spring_test.zx_blog/GuestLogin" method="post">
 			<table>
 				<tr>
 					<td class="td1">用户名</td>

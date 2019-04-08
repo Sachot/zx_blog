@@ -14,7 +14,7 @@ import domain.Article;
 /**
  * Servlet implementation class CommentServlet
  */
-@WebServlet("/CommentServlet")
+@WebServlet("/CommentServlet%3E")
 public class CommentServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -35,6 +35,8 @@ public class CommentServlet extends HttpServlet {
 		List<Article> articles = (List<Article>) this.getServletContext().getAttribute("articles");
 		Article comArticle = articles.get(Integer.parseInt(atcnum));
 		comArticle.setComment(comment);
+		
+		response.sendRedirect(request.getContextPath()+"/guestview.jsp");
 	}
 
 	/**

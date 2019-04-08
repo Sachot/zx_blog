@@ -100,8 +100,9 @@
                
     
                <p>添加评论:</p>
-               <form action="/zx_blog/CommentServlet>" method="get">
-               <input type="text" name="flag" value="<%=i %>" oninput="value=value.replace(/[^\d]/g,'')"/>
+               <form action="/maven.spring_test.zx_blog/CommentServlet>" method="get">
+               <input type="text" name="flag" value="<%=i %>"/>
+               <!--  oninput="value=value.replace(/[^\d]/g,'')" -->
                <input type="text" name="comment"/>
                <input id="tj" type="submit" value="提交"/>
                </form>

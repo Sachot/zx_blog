@@ -28,7 +28,7 @@
 	<div class="login">
 		<div class="header">
 		<p>登录成功</p>
-		<div class="box"><img src="/zx_blog/upload/<%= fileName %>" /><%= admin.getUsername() %></div>
+		<div class="box"><img src="/maven.spring_test.zx_blog/upload/<%= fileName %>" /><%= admin.getUsername() %></div>
 		<div>
 		<p><a href="./addarticle.jsp">写博文</a></p>
 		</div>			
@@ -41,7 +41,7 @@
 	%>
 	<div class="login">
 		<div class="header">
-			<h1>您还没有登录！请先去<a href="/zx_blog/adminlogin.jsp">登录</a>！</h1>
+			<h1>您还没有登录！请先去<a href="/maven.spring_test.zx_blog/adminlogin.jsp">登录</a>！</h1>
 		</div>
 	</div>
 	<div class="content">
@@ -59,7 +59,7 @@
     %>
          <h3><%= title %></h3>
         <p><%= content %></p>
-        <form action="/zx_blog/DeleteArticleServlet?flag=<%=i %>" method="get">
+        <form action="/maven.spring_test.zx_blog/DeleteArticleServlet?flag=<%=i %>" method="get">
         <input type="submit" value="删除">
         </form>
         

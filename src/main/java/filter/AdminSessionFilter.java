@@ -11,6 +11,8 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import domain.Admin;
+
 public class AdminSessionFilter implements Filter {
 
 	@Override
@@ -26,7 +28,7 @@ public class AdminSessionFilter implements Filter {
 		HttpServletRequest request = (HttpServletRequest)arg0;
 		HttpServletResponse response = (HttpServletResponse)arg1;
 		
-		String loginAdmin = (String)request.getSession().getAttribute("admin");
+		Admin loginAdmin = (Admin)request.getSession().getAttribute("admin");
 		
 		if(loginAdmin==null) {
 			response.sendRedirect(request.getContextPath()+"/adminlogin.jsp?flag=1");

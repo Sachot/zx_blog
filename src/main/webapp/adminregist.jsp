@@ -27,7 +27,7 @@
 			}
 		%>
 		<h3><font color="red"><%= msg %></font></h3>
-		<form action="/zx_blog/AdminRegistServlet" method="post" enctype="multipart/form-data">
+		<form action="/maven.spring_test.zx_blog/AdminRegistServlet" method="post" enctype="multipart/form-data">
 			<table>
 				<tr>
 					<td class="td1">用户名</td>

@@ -7,7 +7,7 @@
 <title>写文章</title>
 </head>
 <body>
-     <form action="/zx_blog/AddArticleServlet" method="post" enctype="multipart/form-data">
+     <form action="/maven.spring_test.zx_blog/AddArticleServlet" method="post" enctype="multipart/form-data">
           标题：<input type="text" class="input1" name="title">
       <label>正文：</label>
       <textarea name="content" rows="100" cols="200">
